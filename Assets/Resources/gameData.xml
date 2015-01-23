@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <scenes>
-  <scene id="1" bgImage="bg1.jpg">
+  <scene id="1" bgImage="testi1">
     <option1 id="1">
       Option1 text
     </option1>
@@ -10,11 +10,11 @@
     <option3 id="3">
       Option3 text
     </option3>
-    <description>
+    <desc>
       <![CDATA[Long description text]]>
-    </description>
+    </desc>
   </scene>
-  <scene id="2" bgImage="bg2.jpg">
+  <scene id="2" bgImage="testi2">
     <option1 id="1">
       Option1 text 2
     </option1>
@@ -24,11 +24,11 @@
     <option3 id="3">
       Option3 text 2
     </option3>
-    <description>
+    <desc>
       <![CDATA[Long description text 2]]>
-    </description>
+    </desc>
   </scene>
-  <scene id="3" bgImage="bg3.jpg">
+  <scene id="3" bgImage="testi3">
     <option1 id="1">
       Option1 text 3
     </option1>
@@ -38,8 +38,12 @@
     <option3 id="3">
       Option3 text 3
     </option3>
-    <description>
-      <![CDATA[Long description text 3]]>
-    </description>
+    <desc>
+      <![CDATA[
+      Long 
+      description text 
+      3
+      ]]>
+    </desc>
   </scene>
 </scenes>
