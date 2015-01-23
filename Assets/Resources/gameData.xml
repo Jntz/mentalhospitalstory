@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<scenes>
+  <scene id="1" bgImage="bg1.jpg">
+    <option1 id="1">
+      Option1 text
+    </option1>
+    <option2 id="2">
+      Option2 text
+    </option2>
+    <option3 id="3">
+      Option3 text
+    </option3>
+    <description>
+      <![CDATA[Long description text]]>
+    </description>
+  </scene>
+  <scene id="2" bgImage="bg2.jpg">
+    <option1 id="1">
+      Option1 text 2
+    </option1>
+    <option2 id="2">
+      Option2 text 2
+    </option2>
+    <option3 id="3">
+      Option3 text 2
+    </option3>
+    <description>
+      <![CDATA[Long description text 2]]>
+    </description>
+  </scene>
+  <scene id="3" bgImage="bg3.jpg">
+    <option1 id="1">
+      Option1 text 3
+    </option1>
+    <option2 id="2">
+      Option2 text 3
+    </option2>
+    <option3 id="3">
+      Option3 text 3
+    </option3>
+    <description>
+      <![CDATA[Long description text 3]]>
+    </description>
+  </scene>
+</scenes>
