@@ -1,43 +1,31 @@
 <?xml version="1.0"?>
 <scenes>
   <scene id="1" bgImage="testi1">
-    <option1 id="1">
-      Option1 text
-    </option1>
-    <option2 id="2">
-      Option2 text
-    </option2>
-    <option3 id="3">
-      Option3 text
-    </option3>
+    <options>
+      <option id="1">Hyppää kattoon</option>
+      <option id="2">Hyppää kaivoon</option>
+      <option id="3">Hyppää veteen</option>
+    </options>
     <desc>
-      <![CDATA[Long description text]]>
+      <![CDATA[Olipa kerran iso paha susi ja niin edelleen]]>
     </desc>
   </scene>
   <scene id="2" bgImage="testi2">
-    <option1 id="1">
-      Option1 text 2
-    </option1>
-    <option2 id="2">
-      Option2 text 2
-    </option2>
-    <option3 id="3">
-      Option3 text 2
-    </option3>
+    <options>
+      <option id="1">Option1 text 2</option>
+      <option id="2">Option2 text 2</option>
+      <option id="3">Option3 text 2</option>
+    </options>
     <desc>
       <![CDATA[Long description text 2]]>
     </desc>
   </scene>
   <scene id="3" bgImage="testi3">
-    <option1 id="1">
-      Option1 text 3
-    </option1>
-    <option2 id="2">
-      Option2 text 3
-    </option2>
-    <option3 id="3">
-      Option3 text 3
-    </option3>
+    <options>
+      <option id="1">Option1 text 3</option>
+      <option id="2">Option2 text 3</option>
+      <option id="3">Option3 text 3</option>
+    </options>
     <desc>
       <![CDATA[
       Long 
