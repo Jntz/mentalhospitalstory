@@ -6,22 +6,19 @@ using System.Collections.Generic;
 
 public class GUIScript : MonoBehaviour {
 
-	public Texture[] textures;
 	private Texture currentTexture = new Texture(); //texture which use in background
-	public Rect optionRect1, optionRect2, optionRect3;
-	public string optionText1, optionText2, optionText3;
-	public GUIStyle buttonStyle;
+	public Rect optionRect1, optionRect2, optionRect3, descriptionRect, bgRect;
+	public string optionText1, optionText2, optionText3, description;
 	private TextAsset gameData;
-
-	public Scene[] scenes;
+	public Scene[] scenes; //list of scenes 
+	public GUIStyle descriptionGUIStyle;
+	public GUISkin guiSkin = new GUISkin ();
 
 	//Static definitions
 	private float width, height = 30f, buttonStartingPos = 0f;
-	private int index = 0, jumpingValue;//jumping value = where is next texture in array, example 0 => first, 1 = empty (or different start), 2 = empty (or different start) 
-										//3 => first and select first option (start => press option 1), 4 => first and select second option, 5 => first and select third option
 	private int currentSceneIndex = 0;
 
-	public List<int> sceneIndexLog = new List<int> ();
+	public List<int> sceneIndexLog = new List<int> (); //logging all user selections
 
 	[System.Serializable]
 	public class SceneOption {
@@ -49,18 +46,17 @@ public class GUIScript : MonoBehaviour {
 			this.option3 = option3;
 		}
 	}
-
-
-
+	
 	// Use this for initialization
 	void Start () {
 		loadGameData ();
 
 		buttonStartingPos = Screen.height - (3 * (height + 15f));
 		width = Screen.width - 40f;
-		initializeOptionsPos ();
+		initializeRectsPos ();
 
 		setCurrentScene ();
+
 	}
 	void setCurrentScene() {
 		sceneIndexLog.Add (currentSceneIndex); //add to scene index log
@@ -69,24 +65,23 @@ public class GUIScript : MonoBehaviour {
 		optionText1 = scenes [currentSceneIndex].option1.text;
 		optionText2 = scenes [currentSceneIndex].option2.text;
 		optionText3 = scenes [currentSceneIndex].option3.text;
+		description = scenes [currentSceneIndex].description;
 	}
 	void loadGameData() {
+		int id, i = 0, optionID;
+		string description, bgImageName;
+		Texture bgImage;
+		SceneOption option1, option2, option3;
+		XmlNode childNode;
+
 		//Load game data in xml file
 		gameData = Resources.Load("gameData") as TextAsset;
 		XmlDocument xmldoc = new XmlDocument ();
 		xmldoc.LoadXml ( gameData.text );
 
-		int id, i = 0, optionID;
-		string description, bgImageName;
-		Texture bgImage;
-		SceneOption option1, option2, option3;
-
-		XmlNode childNode; 
-
 		scenes = new Scene[xmldoc.DocumentElement.ChildNodes.Count];
 
 		foreach (XmlNode node in xmldoc.DocumentElement.ChildNodes) { //loop all scene and initialize scene instance
-
 			//If cannot parse int value in string => continue
 			if(!int.TryParse(node.Attributes["id"].Value, out id)) {
 				continue;
@@ -121,76 +116,60 @@ public class GUIScript : MonoBehaviour {
 		}
 
 	}
-	void initializeOptionsPos() {
-		float x = 20f, y = buttonStartingPos;
+	void initializeRectsPos() {
+		float x = 20f, y = buttonStartingPos, descriptionWidth = 300f, descriptionHeight = 300f, 
+				centerWidth = Screen.width / 2f, centerHeight = Screen.height / 2f;
 
 		optionRect1 = new Rect (x, y, width, height);
-		y += height + 15f;
+		y += height + 15f;	//update to next button y-position
 
 		optionRect2 = new Rect (x, y, width, height);
-		y += height + 15f;
+		y += height + 15f; //update to next button y-position
 
 		optionRect3 = new Rect (x, y, width, height);
-	}
-	
-	void loadAllBackground() {
-		Object[] obj_textures = Resources.LoadAll("Backgrounds", typeof(Texture));
-		
-		textures = new Texture[obj_textures.Length];
-		for (int i = 0; i < obj_textures.Length; i++) {
-			textures[i] = obj_textures[i] as Texture;
-		}
-		currentTexture = textures [index];
-	}
-	
-	void selectOption1() {
-		Debug.Log ("Press button one");
-		int findThisId = scenes [currentSceneIndex].option1.id;
 
-		for (int i = 0; i < scenes.Length; i++) {
-			if(scenes[i].id == findThisId) {
-				currentSceneIndex = i;
-				break;
-			}
-		}
-		setCurrentScene ();
-	}
-	void selectOption2() {
-		Debug.Log ("Press button two");
-		int findThisId = scenes [currentSceneIndex].option2.id;
-
-		for (int i = 0; i < scenes.Length; i++) {
-			if(scenes[i].id == findThisId) {
-				currentSceneIndex = i;
-				break;
-			}
-		}
-		setCurrentScene ();
-	}
-	void selectOption3() {
-		Debug.Log ("Press button three");
-		int findThisId = scenes [currentSceneIndex].option3.id;
-
-		for (int i = 0; i < scenes.Length; i++) {
-			if(scenes[i].id == findThisId) {
-				currentSceneIndex = i;
-				break;
-			}
-		}
-		setCurrentScene ();
+		bgRect = new Rect (0f, 0f, Screen.width, Screen.height); //background texture is fullscreen
+		descriptionRect = new Rect (centerWidth - (descriptionWidth / 2f), centerHeight - (descriptionWidth / 2f), descriptionWidth, descriptionHeight);
 	}
 
 	void OnGUI() {
-		GUI.DrawTexture (new Rect (0f, 0f, Screen.width, Screen.height), currentTexture, ScaleMode.ScaleToFit); //texture fill camera area
+		GUI.DrawTexture (bgRect, currentTexture, ScaleMode.ScaleToFit); //texture fill camera area
+		GUI.TextArea (descriptionRect, description, descriptionGUIStyle);
 					
 		if (GUI.Button (optionRect1, optionText1)) {
-			selectOption1();
+			selectOption(1);
 		}  
 		if (GUI.Button (optionRect2, optionText2)) {
-			selectOption2();
+			selectOption(2);
 		}
 		if (GUI.Button (optionRect3, optionText3)) {
-			selectOption3();
+			selectOption(3);
 		}
+	}
+	void selectOption(int selectedOption) {
+		//check which button pressed, find id in scenelist and update current scene
+		int findThisId;
+		Debug.Log ("Press button " + selectedOption);
+		switch (selectedOption) {
+		case 1:
+			findThisId = scenes [currentSceneIndex].option1.id;
+			break;
+		case 2:
+			findThisId = scenes [currentSceneIndex].option2.id;
+			break;
+		case 3: 
+			findThisId = scenes [currentSceneIndex].option3.id;
+			break;
+		default:
+			return; // < 0 and > 3 is not allowed!
+		}
+
+		for (int i = 0; i < scenes.Length; i++) { 
+			if(scenes[i].id == findThisId) {
+				currentSceneIndex = i;
+				break;
+			}
+		}
+		setCurrentScene (); //update current scene texture, description and buttons
 	}
 }
