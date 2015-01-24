@@ -21,13 +21,9 @@ public class GUIScript : MonoBehaviour {
 	}
 	
 	void initializeRectsPos() {
-		float width, height = 30f, buttonStartingPos = 0f, menuYOffset = 5f;
-
-		buttonStartingPos = Screen.height - (3 * (height + 15f));
-		width = Screen.width - 40f;
-
-		float x = 20f, y = buttonStartingPos, descriptionWidth = 300f, descriptionHeight = 300f, 
-				centerWidth = Screen.width / 2f, centerHeight = Screen.height / 2f;
+		float width = Screen.width - 40f, height = 30f, buttonStartingPos = Screen.height - (3 * (height + 15f)), 
+			menuYOffset = 5f, x = 20f, y = buttonStartingPos, descriptionWidth = 300f, descriptionHeight = 300f, 
+			centerWidth = Screen.width / 2f, centerHeight = Screen.height / 2f;
 
 		optionRect1 = new Rect (x, y, width, height);
 		y += height + 15f;	//update to next button y-position
@@ -81,7 +77,7 @@ public class GUIScript : MonoBehaviour {
 			Application.LoadLevel(Application.loadedLevel);
 		}
 		if (GUI.Button (menuExitToMainMenuRect, menuExitToMainMenu)) {
-
+			Application.LoadLevel (0);
 		}
 	}
 }
