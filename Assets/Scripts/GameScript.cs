@@ -5,8 +5,7 @@ using System.Xml;
 using System.IO;
 
 public class GameScript : MonoBehaviour {
-
-	GUIScript guiScript;
+	
 	UIScript uiScript;
 	private TextAsset gameData;
 	public Scene[] scenes; //list of scenes 
@@ -18,7 +17,6 @@ public class GameScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		guiScript = gameObject.GetComponent<GUIScript> ();
 		uiScript = gameObject.GetComponent<UIScript> ();
 		loadGameData ();
 		setCurrentScene (currentSceneIndex); //start to first index
