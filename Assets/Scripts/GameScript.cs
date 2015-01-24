@@ -109,8 +109,7 @@ public class GameScript : MonoBehaviour {
 			}
 		}
 	}
-
-
+	
 	[System.Serializable]
 	public class SceneOption {
 		public int id;
