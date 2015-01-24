@@ -42,6 +42,7 @@ public class GameScript : MonoBehaviour {
 		//Load game data in xml file
 		gameData = Resources.Load("gameData") as TextAsset;
 		XmlDocument xmldoc = new XmlDocument ();
+		xmldoc.PreserveWhitespace = false;
 		xmldoc.LoadXml ( gameData.text );
 		
 		scenes = new Scene[xmldoc.DocumentElement.ChildNodes.Count];
