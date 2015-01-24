@@ -33,8 +33,8 @@ public class GameScript : MonoBehaviour {
 	}
 
 	void loadGameData() {
-		int id, i = 0, optionID;
-		string description, bgImageName;
+		int i = 0;
+		string description, bgImageName, id, optionID;
 		Sprite bgImage;
 		SceneOption option1, option2, option3;
 		XmlNode childNode;
@@ -48,34 +48,24 @@ public class GameScript : MonoBehaviour {
 		
 		foreach (XmlNode node in xmldoc.DocumentElement.ChildNodes) { //loop all scene and initialize scene instance
 			//If cannot parse int value in string => continue
-			if(!int.TryParse(node.Attributes["id"].Value, out id)) {
-				continue;
-			}
+			id = node.Attributes["id"].Value;
 			
 			bgImageName = (string) node.Attributes["bgImage"].Value;
 			bgImage = Resources.Load<Sprite>("Sprites/" + bgImageName);
 			
 			//If cannot parse int value in string => continue
 			childNode = node.ChildNodes[0];
-			if(!int.TryParse(childNode.ChildNodes[0].Attributes["id"].Value, out optionID)) {
-				continue;
-			}
-			option1 = new SceneOption(optionID, childNode.ChildNodes[0].InnerXml);
-			
-			//If cannot parse int value in string => continue
-			if(!int.TryParse(childNode.ChildNodes[1].Attributes["id"].Value, out optionID)) {
-				continue;
-			}
-			option2 = new SceneOption(optionID, childNode.ChildNodes[1].InnerXml);
-			
-			//If cannot parse int value in string => continue
-			if(!int.TryParse(childNode.ChildNodes[2].Attributes["id"].Value, out optionID)) {
-				continue;
-			}
-			option3 = new SceneOption(optionID, childNode.ChildNodes[2].InnerXml);
+			optionID = childNode.ChildNodes[0].Attributes["id"].Value;
+			option1 = new SceneOption(optionID, childNode.ChildNodes[0].InnerXml.Trim());
+
+			optionID = childNode.ChildNodes[1].Attributes["id"].Value;
+			option2 = new SceneOption(optionID, childNode.ChildNodes[1].InnerXml.Trim());
+
+			optionID = childNode.ChildNodes[2].Attributes["id"].Value;
+			option3 = new SceneOption(optionID, childNode.ChildNodes[2].InnerXml.Trim());
 			
 			childNode = node.ChildNodes[1];
-			description = childNode.InnerText.Trim();
+			description = childNode.InnerText. Trim();
 			
 			scenes[i++] = new Scene(id, description, bgImage, option1, option2, option3);
 		}
@@ -84,7 +74,7 @@ public class GameScript : MonoBehaviour {
 
 	public void selectOption(int selectedOption) {
 		//check which button pressed, find id in scenelist and update current scene
-		int findThisId;
+		string findThisId;
 		Debug.Log ("Press button " + selectedOption);
 		switch (selectedOption) {
 		case 1:
@@ -101,7 +91,8 @@ public class GameScript : MonoBehaviour {
 		}
 		
 		for (int i = 0; i < scenes.Length; i++) { 
-			if(scenes[i].id == findThisId) {
+			 
+			if(string.Equals(scenes[i].id, findThisId)) {
 				setCurrentScene(i); //update current scene texture, description and buttons
 				return;
 			}
@@ -110,22 +101,20 @@ public class GameScript : MonoBehaviour {
 	
 	[System.Serializable]
 	public class SceneOption {
-		public int id;
-		public string text;
+		public string id, text;
 		
-		public SceneOption(int id, string text) {
+		public SceneOption(string id, string text) {
 			this.id = id;
 			this.text = text;
 		}
 	}
 	[System.Serializable]
 	public class Scene {
-		public int id;
-		public string description;
+		public string id, description;
 		public Sprite bgImage;
 		public SceneOption option1, option2, option3;
 		
-		public Scene(int id, string description, Sprite bgImage, SceneOption option1, SceneOption option2, SceneOption option3) {
+		public Scene(string id, string description, Sprite bgImage, SceneOption option1, SceneOption option2, SceneOption option3) {
 			this.id = id;
 			this.description = description;
 			this.bgImage = bgImage;

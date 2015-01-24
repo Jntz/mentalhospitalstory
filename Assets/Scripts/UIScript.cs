@@ -14,7 +14,7 @@ public class UIScript : MonoBehaviour {
 	}
 
 	public void updateUIData(Sprite image, string option1, string option2, string option3, string description) {
-		this.description.text = description;
+		this.description.text = description.ToString ();
 		this.option1.text = option1;
 		this.option2.text = option2;
 		this.option3.text = option3;
