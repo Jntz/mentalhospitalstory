@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\GUIScript.cs" />
      <Compile Include="Assets\Scripts\GameScript.cs" />
      <Compile Include="Assets\Scripts\MenuGUIScript.cs" />
+     <Compile Include="Assets\Scripts\MenuUIScript.cs" />
      <Compile Include="Assets\Scripts\UIScript.cs" />
      <None Include="Assets\Resources\gameData.xml" />
  <Reference Include="UnityEngine.UI">
