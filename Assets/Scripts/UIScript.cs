@@ -16,8 +16,29 @@ public class UIScript : MonoBehaviour {
 	public void updateUIData(Sprite image, string option1, string option2, string option3, string description) {
 		this.description.text = description.Replace("  ", string.Empty);
 		this.option1.text = option1;
+
+		if (string.Equals (this.option1.text, string.Empty)) {
+			this.option1.gameObject.SetActive (false);
+		} 
+		else {
+			this.option1.gameObject.SetActive (true);	
+		}
+
 		this.option2.text = option2;
+		if (string.Equals (this.option2.text, string.Empty)) {
+			this.option2.gameObject.SetActive (false);
+		} 
+		else {
+			this.option2.gameObject.SetActive (true);
+		}
+
 		this.option3.text = option3;
+		if (string.Equals (this.option3.text, string.Empty)) {
+			this.option3.gameObject.SetActive (false);
+		} 
+		else {
+			this.option3.gameObject.SetActive (true);
+		}
 
 		this.image.sprite = image;
 	}
