@@ -9,37 +9,39 @@ public class GUIScript : MonoBehaviour {
 	public string optionText1, optionText2, optionText3, description, menuText = "Menu", menuRestart = "Restart Game",
 					menuExitToMainMenu = "Exit to Main Menu";
 
-	public GUIStyle descriptionGUIStyle;
+	public GUIStyle descriptionGUIStyle, buttonGUIStyle;
 	private bool menuOpen = false;
-	
 
 	// Use this for initialization
 	void Start () {
 		gameScript = gameObject.GetComponent<GameScript> ();
-	
+
 		initializeRectsPos ();
 	}
 	
 	void initializeRectsPos() {
-		float width = Screen.width - 40f, height = 30f, buttonStartingPos = Screen.height - (3 * (height + 15f)), 
-			menuYOffset = 5f, x = 20f, y = buttonStartingPos, descriptionWidth = 300f, descriptionHeight = 300f, 
+		float width = Screen.width * 0.6f, height = 30f, buttonStartingPos = Screen.height * .6f, 
+			menuXOffset = 5f, x = 50f, y = buttonStartingPos, descriptionWidth = Screen.width - 40f, descriptionHeight = Screen.height * 0.7f, 
 			centerWidth = Screen.width / 2f, centerHeight = Screen.height / 2f;
 
-		optionRect1 = new Rect (x, y, width, height);
+		optionRect1 = new Rect (x, y, width - x, height);
 		y += height + 15f;	//update to next button y-position
 
-		optionRect2 = new Rect (x, y, width, height);
+		optionRect2 = new Rect (x, y, width - x, height);
 		y += height + 15f; //update to next button y-position
 
-		optionRect3 = new Rect (x, y, width, height);
+		optionRect3 = new Rect (x, y, width - x, height);
 
-		bgRect = new Rect (0f, 0f, Screen.width, Screen.height); //background texture is fullscreen
-		descriptionRect = new Rect (centerWidth - (descriptionWidth / 2f), centerHeight - (descriptionWidth / 2f), descriptionWidth, descriptionHeight);
+		bgRect = new Rect (width + 20f, 
+		                   Screen.height * .6f,
+		                   (Screen.width * 0.4f)-20f, 
+		                   Screen.height * .4f);
+		descriptionRect = new Rect (centerWidth - (descriptionWidth / 2f), 30f, descriptionWidth, descriptionHeight);
 
-		menuRect = new Rect (5f, menuYOffset, 50f, 20f);
+		menuRect = new Rect (menuXOffset, 5f, 50f, 20f);
 
-		menuRestartRect = new Rect (5f, menuRect.y + menuYOffset + menuRect.height, 120f, 20f);
-		menuExitToMainMenuRect = new Rect (5f, menuRestartRect.y + menuYOffset + menuRestartRect.height, 120f, 20f);
+		menuRestartRect = new Rect (menuRect.x + menuXOffset + menuRect.width, 5f, 120f, 20f);
+		menuExitToMainMenuRect = new Rect (menuRestartRect.x + menuXOffset + menuRestartRect.width, 5f, 120f, 20f);
 
 	}
 
@@ -52,24 +54,24 @@ public class GUIScript : MonoBehaviour {
 	}
 
 	void OnGUI() {
-		GUI.DrawTexture (bgRect, currentTexture, ScaleMode.ScaleToFit); //texture fill camera area
+		GUI.DrawTexture (bgRect, currentTexture, ScaleMode.StretchToFill); //texture fill camera area
 		GUI.TextField (descriptionRect, description, descriptionGUIStyle);
-					
-		if (GUI.Button (optionRect1, optionText1)) {
+
+		if (menuOpen) {
+			drawMenu ();
+		}
+
+		if (GUI.Button (optionRect1, optionText1, buttonGUIStyle)) {
 			gameScript.selectOption(1);
 		}  
-		if (GUI.Button (optionRect2, optionText2)) {
+		if (GUI.Button (optionRect2, optionText2, buttonGUIStyle)) {
 			gameScript.selectOption(2);
 		}
-		if (GUI.Button (optionRect3, optionText3)) {
+		if (GUI.Button (optionRect3, optionText3, buttonGUIStyle)) {
 			gameScript.selectOption(3);
 		}
 		if (GUI.Button (menuRect, menuText)) {
 			menuOpen = !menuOpen;	//toggle menuOpen value true/false
-		}
-
-		if (menuOpen) {
-			drawMenu ();
 		}
 	}
 	void drawMenu() {

@@ -7,6 +7,7 @@ using System.IO;
 public class GameScript : MonoBehaviour {
 
 	GUIScript guiScript;
+	UIScript uiScript;
 	private TextAsset gameData;
 	public Scene[] scenes; //list of scenes 
 
@@ -18,6 +19,7 @@ public class GameScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		guiScript = gameObject.GetComponent<GUIScript> ();
+		uiScript = gameObject.GetComponent<UIScript> ();
 		loadGameData ();
 		setCurrentScene (currentSceneIndex); //start to first index
 	}
@@ -27,13 +29,15 @@ public class GameScript : MonoBehaviour {
 		Scene scene = scenes [currentSceneIndex];
 		sceneIndexLog.Add (currentSceneIndex); //add to scene index log
 
-		guiScript.updateGUIdata (scene.bgImage, scene.option1.text, scene.option2.text, scene.option3.text, scene.description);
+		uiScript.updateUIData (scene.bgImage, scene.option1.text, scene.option2.text, scene.option3.text, scene.description);
+
+		//guiScript.updateGUIdata (scene.bgImage, scene.option1.text, scene.option2.text, scene.option3.text, scene.description);
 	}
 
 	void loadGameData() {
 		int id, i = 0, optionID;
 		string description, bgImageName;
-		Texture bgImage;
+		Sprite bgImage;
 		SceneOption option1, option2, option3;
 		XmlNode childNode;
 		
@@ -51,7 +55,7 @@ public class GameScript : MonoBehaviour {
 			}
 			
 			bgImageName = (string) node.Attributes["bgImage"].Value;
-			bgImage = Resources.Load("Backgrounds/" + bgImageName) as Texture;
+			bgImage = Resources.Load<Sprite>("Sprites/" + bgImageName);
 			
 			//If cannot parse int value in string => continue
 			childNode = node.ChildNodes[0];
@@ -121,10 +125,10 @@ public class GameScript : MonoBehaviour {
 	public class Scene {
 		public int id;
 		public string description;
-		public Texture bgImage;
+		public Sprite bgImage;
 		public SceneOption option1, option2, option3;
 		
-		public Scene(int id, string description, Texture bgImage, SceneOption option1, SceneOption option2, SceneOption option3) {
+		public Scene(int id, string description, Sprite bgImage, SceneOption option1, SceneOption option2, SceneOption option3) {
 			this.id = id;
 			this.description = description;
 			this.bgImage = bgImage;
