@@ -133,10 +133,37 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
+  menuRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  menuRestartRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  menuExitToMainMenuRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  menuCloseMenuRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
   optionText1: 
   optionText2: 
   optionText3: 
   description: 
+  menuText: Menu
+  menuRestart: Restart Game
+  menuExitToMainMenu: Exit to Main Menu
   descriptionGUIStyle:
     m_Name: 
     m_Normal:
@@ -275,8 +302,8 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 800
-    height: 480
+    width: 1280
+    height: 720
   near clip plane: .300000012
   far clip plane: 1000
   field of view: 60
