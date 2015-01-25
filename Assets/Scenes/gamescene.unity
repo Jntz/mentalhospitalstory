@@ -104,11 +104,11 @@ RectTransform:
   m_Children:
   - {fileID: 638980518}
   m_Father: {fileID: 734310590}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 240.199997, y: -15}
-  m_SizeDelta: {x: 129.800003, y: 30}
+  m_AnchoredPosition: {x: 250, y: -15}
+  m_SizeDelta: {x: 150, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &28867372
 MonoBehaviour:
@@ -220,7 +220,7 @@ RectTransform:
   m_Children:
   - {fileID: 1287804221}
   m_Father: {fileID: 734310590}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 25, y: -15}
@@ -397,7 +397,7 @@ RectTransform:
   m_Children:
   - {fileID: 630002483}
   m_Father: {fileID: 734310590}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_AnchorMin: {x: 0, y: .5}
   m_AnchorMax: {x: 0, y: .5}
   m_AnchoredPosition: {x: 332, y: -150}
@@ -600,7 +600,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22440332, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 22440332, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -608,7 +608,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22440332, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -703
+      value: -704
       objectReference: {fileID: 0}
     - target: {fileID: 22440332, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
       propertyPath: m_SizeDelta.x
@@ -673,6 +673,27 @@ Prefab:
     - target: {fileID: 11440334, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
       propertyPath: m_FontData.m_BestFit
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440334, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440334, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440334, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440334, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 16fb53752839349b090a35585c8c4cc0,
+        type: 3}
+    - target: {fileID: 11440334, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
@@ -811,10 +832,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .195999995, g: .195999995, b: .195999995, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 22
+    m_Font: {fileID: 12800000, guid: 16fb53752839349b090a35585c8c4cc0, type: 3}
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -880,10 +901,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .195999995, g: .195999995, b: .195999995, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 22
+    m_Font: {fileID: 12800000, guid: 16fb53752839349b090a35585c8c4cc0, type: 3}
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -949,8 +970,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .195999995, g: .195999995, b: .195999995, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 16fb53752839349b090a35585c8c4cc0, type: 3}
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -997,6 +1018,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 1735505588}
   - {fileID: 1721580512}
   - {fileID: 307056548}
   - {fileID: 1333226091}
@@ -1107,7 +1129,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22440332, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 22440332, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -1197,6 +1219,27 @@ Prefab:
       propertyPath: m_Type
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11440334, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440334, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440334, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440334, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 16fb53752839349b090a35585c8c4cc0,
+        type: 3}
+    - target: {fileID: 11440334, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 24
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
   m_RootGameObject: {fileID: 307056547}
@@ -1250,8 +1293,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .195999995, g: .195999995, b: .195999995, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 16fb53752839349b090a35585c8c4cc0, type: 3}
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -1384,10 +1427,10 @@ RectTransform:
   m_Children:
   - {fileID: 636240322}
   m_Father: {fileID: 734310590}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 332, y: -603}
+  m_AnchoredPosition: {x: 332, y: -604}
   m_SizeDelta: {x: 661, y: 74}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &1357172314
@@ -1421,10 +1464,10 @@ RectTransform:
   m_Children:
   - {fileID: 1571040642}
   m_Father: {fileID: 734310590}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 332, y: -703}
+  m_AnchoredPosition: {x: 332, y: -704}
   m_SizeDelta: {x: 661, y: 74}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1357172316
@@ -1558,10 +1601,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .195999995, g: .195999995, b: .195999995, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 22
+    m_Font: {fileID: 12800000, guid: 16fb53752839349b090a35585c8c4cc0, type: 3}
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -1589,6 +1632,7 @@ GameObject:
   - 224: {fileID: 1721580512}
   - 222: {fileID: 1721580514}
   - 114: {fileID: 1721580513}
+  - 114: {fileID: 1721580515}
   m_Layer: 5
   m_Name: Desc
   m_TagString: Untagged
@@ -1607,7 +1651,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 734310590}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
   m_AnchoredPosition: {x: 0, y: -197}
@@ -1625,10 +1669,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .1953125, g: .1953125, b: .1953125, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 22
+    m_Font: {fileID: 12800000, guid: 16fb53752839349b090a35585c8c4cc0, type: 3}
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -1640,23 +1684,37 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "You see a sturdy green door in front of you, it's paint peeling off and
     revealing a brown oak surface. Above the door a plaque reads: \u201DArchive room\u201D.
-    A large round handle and an iron lock are embedded into the strong door.\n \n
-    \       You take the key in your hand and place it into the lock. It requires
-    some force to get through the rust and dust. A loud creak echoes in the hallway
-    and behind the door. The lock moans and grinds and finally rewards you with a
-    satisfying click. You push the grand door open and cover your mouth from all the
-    dust puffing around. After coughing a few times you raise your eyes to the archive
-    room and see right in front of you a ghostly apparition of a high class man. The
-    man appears as a white and partly transparent ghost. He even waves his hands around
-    a bit and lets out a meager \u201DOoooOooOOOoooOooOOooo...\u201D You are not impressed.\n
-    \n        Behind the ghost you see rows of archive cabinets, one of them no doubt
-    holding within the details that you seek."
+    A large round handle and an iron lock are embedded into the strong door.\n \nYou
+    take the key in your hand and place it into the lock. It requires some force to
+    get through the rust and dust. A loud creak echoes in the hallway and behind the
+    door. The lock moans and grinds and finally rewards you with a satisfying click.
+    You push the grand door open and cover your mouth from all the dust puffing around.
+    After coughing a few times you raise your eyes to the archive room and see right
+    in front of you a ghostly apparition of a high class man. The man appears as a
+    white and partly transparent ghost. He even waves his hands around a bit and lets
+    out a meager \u201DOoooOooOOOoooOooOOooo...\u201D You are not impressed.\n \nBehind
+    the ghost you see rows of archive cabinets, one of them no doubt holding within
+    the details that you seek."
 --- !u!222 &1721580514
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1721580511}
+--- !u!114 &1721580515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1721580511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: .162170365, g: .573529422, b: 0, a: .686274529}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 0
 --- !u!1 &1723159844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,7 +1743,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 734310590}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_AnchorMin: {x: 1, y: .5}
   m_AnchorMax: {x: 1, y: .5}
   m_AnchoredPosition: {x: -256, y: -247}
@@ -1718,6 +1776,67 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1723159844}
+--- !u!1 &1735505587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1735505588}
+  - 222: {fileID: 1735505590}
+  - 114: {fileID: 1735505589}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1735505588
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1735505587}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 734310590}
+  m_RootOrder: 0
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1280, y: 769}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &1735505589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1735505587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: d8a685da9051a43408d0c7543c1e4fd6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1735505590
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1735505587}
 --- !u!1 &1755257394
 GameObject:
   m_ObjectHideFlags: 0
@@ -1828,7 +1947,7 @@ RectTransform:
   m_Children:
   - {fileID: 2082118225}
   m_Father: {fileID: 734310590}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 122.599998, y: -15}
@@ -1875,7 +1994,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22440332, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 22440332, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -1883,7 +2002,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22440332, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -603
+      value: -604
       objectReference: {fileID: 0}
     - target: {fileID: 22440332, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1949,6 +2068,27 @@ Prefab:
       propertyPath: m_FontData.m_BestFit
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11440334, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440334, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440334, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440334, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 16fb53752839349b090a35585c8c4cc0,
+        type: 3}
+    - target: {fileID: 11440334, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 24
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 305d1ceffc8f14728a786c622c910889, type: 2}
   m_RootGameObject: {fileID: 1333226087}
@@ -2002,8 +2142,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .195999995, g: .195999995, b: .195999995, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 16fb53752839349b090a35585c8c4cc0, type: 3}
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10

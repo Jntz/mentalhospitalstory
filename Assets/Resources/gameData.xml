@@ -1,49 +1,611 @@
 <?xml version="1.0"?>
 <scenes>
-  <scene id="1" bgImage="testi1">
+  <scene id="beginning" bgImage="testi3" audio="" loop="">
     <options>
-      <option id="3">
-        Throw a flower pot at the ghost
+      <option id="nurse_encounter">
+        Take the corridor left towards the staircase.
       </option>
-      <option id="">
+      <option id="uforoom">
+        Take the corridor right to an open room.
       </option>
-      <option id="3">
-        Bow your head and greet the man with your most corteous gestures
+      <option id="oppositeroom">
+        Go into the room on the opposite side of the corridor.
       </option>
     </options>
     <desc>
       <![CDATA[
-        You see a sturdy green door in front of you, it's paint peeling off and revealing a brown oak surface. Above the door a plaque reads: ”Archive room”. A large round handle and an iron lock are embedded into the strong door.
+      You awaken and open your eyes to see a dreary room and beneath you an unfamiliar bed. You stand up and look outside from a simple window to see a lavish yard some stories below. A road leads to the building, passing through a rusty, closed gate. On top of the gate are written the words ”Bluebell Asylum”. A single large gargoyle statue watches over the entrance.
 
-        You take the key in your hand and place it into the lock. It requires some force to get through the rust and dust. A loud creak echoes in the hallway and behind the door. The lock moans and grinds and finally rewards you with a satisfying click. You push the grand door open and cover your mouth from all the dust puffing around. After coughing a few times you raise your eyes to the archive room and see right in front of you a ghostly apparition of a high class man. The man appears as a white and partly transparent ghost. He even waves his hands around a bit and lets out a meager ”OoooOooOOOoooOooOOooo...” You are not impressed.
-        
-        Behind the ghost you see rows of archive cabinets, one of them no doubt holding within the details that you seek.
+You have a necklace around your neck, one of those that can be opened. You open the necklace and are delighted to see a small picture of your dear wife. You now remember being brought here for some reason, but the reason evades you. You are determined to find out your diagnosis and get back to your wife, so you turn around towards the open door of your room. Through the door you see a corridor going left and right, and a single, slightly open door opposite your room.
       ]]>
     </desc>
   </scene>
-  <scene id="2" bgImage="testi2">
+  <scene id="nurse_encounter" bgImage="testi3" audio="" loop="">
     <options>
-      <option id="3">
-        ”Hey, no need to alarm yourself. I mean, do I look like a person to worry about?”
+      <option id="hide">
+        hide in a nearby room that happens to be a cleaning closet.
+      </option>
+      <option id="shout">
+        shout out at the lady, hoping that she will answer and appear in your sight.
+      </option>
+      <option id="ignore">
+        decide to just ignore the suspicious lady and go on.
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      In the staircase, you suddenly hear footsteps slowly approaching. The sound of high heels suggests that the person approaching is a lady. However, the steps sound uneven and dragging, as if the lady had trouble walking. You start growing suspicious of the lady, and you
+      ]]>
+    </desc>
+  </scene>
+  <scene id="hide" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="crazyman">
+  Continue...
+      </option>
+      <option id=""></option>
+      <option id=""></option>
+    </options>
+    <desc>
+      <![CDATA[
+      In your mind, you curse the darkness of the tiny closet that you chose to be your place of hiding. It is pitch black and there is hardly any space to move, which means your only option is to stand in place and wait. You can almost hear the sound of your heartbeat throbbing in your ears as the footsteps draw nearer and nearer. Suddenly the dragging, uneven sound of the footsteps stops – right in front of the door of your hiding place. You gulp loudly, holding your necklace tightly in your grasp and praying that the horrible lady would pass by so that you may move. Lady Luck seems to have heard your silent wish since the footsteps slowly recede. You wait until you hear but silence, exit the closet and continue. 
+      ]]>
+    </desc>
+  </scene>
+  <scene id="shout" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="gameover">
+        Game over...
       </option>
       <option id="1">
-        ”Step out of my way or I'll do terrible things!” shake fist in air
+        Option2 text 3
       </option>
       <option id="3">
+        Option3 text 3
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      “Who’s there?” Your shout echoes in the shadowy corridor. The lady does not answer you, which provokes you to go to the direction of the footsteps. As you slowly walk closer, the footsteps of the lady are accompanied by deep, scratching breath. You realize the sounds come from a room just next to you. All of a sudden the lady lashes out at you from the dark room, and it is far too late to escape when the horrible abomination of a woman – with grey, rotten skin, blood red eyes and dirty, torn clothes – lashes out at you and sinks her teeth in your flesh, tearing it apart.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="ignore" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="???">
+        ???
+      </option>
+      <option id="">
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      You try to stay calm as you slowly walk along the corridor, working your way towards the next stairs. Next to you, there is a dark room with its door wide open. You manage to pass the door by and a sigh of relief escapes your lips, but it seems that you counted your chickens before they were hatched: someone – or something – enters the corridor from the dark room just behind you and you do not hesitate to start running as fast as you can. You take a quick look over your shoulder and see the lady – or something that once was a lady. Rotting skin, blood red eyes and torn, dirty clothes tell you that the “lady” was clearly something inhuman.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="uforoom" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="abduction">
+        Throw the flower pot at the light source.
+      </option>
+      <option id="fall">
+        Drop the flower pot and seek a better weapon.
+      </option>
+      <option id="dream">
+        Reminisce the happy memories of a long gone summer vacation.
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      You enter a large open room with couches on opposite walls to the left and right. Straight ahead of you is a large tapestry depicting a moose. Your gaze rises up as a bright light shines down on you. You notice the roof is absent. As the spotlight shines brightly at you, you instinctively grab a nearby object to defend yourself. It happens to be a flower pot sitting quietly on a cabinet next to you.
+
+Flower pot in hand and the blinding light limiting your view, you take a moment to decide your next action.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="abduction" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="gameover">
+        Game over.
+      </option>
+      <option id="">
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      You throw the flower pot at the light with all your might and after a brief delay hear a clonk. The light only gets stronger and now fixates directly on you. You cannot see anything anymore and can only feel your feet lifting off the ground slowly. You no longer feel gravity, only a pull upwards. You try to look up, but the light hurts your eyes. So you close your eyes and hope it is all a dream.
+
+The light goes off and you feel the familiar tug of gravity, followed by the pain of landing on a hard surface. You open your eyes to darkness. A green glow turns on and is soon followed by a group of alien creatures crittering towards you. They reveal their pincer-like claws and quickly go to work dissecting your flesh. Ignoring your screams of agony, they precisely avoid your bloodvessels and one by one remove your organs while you watch. You remain alive long enough to see your beating heart being studied by one of the aliens.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="fall" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="vampireroom">
+        Continue...
+      </option>
+      <option id="">
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      You drop the useless flower pot and turn your eyes to the room scanning for possible weapons. Before you can make a move you feel the weak floor of the room crashing from the impact of the flower pot. A hole opens up and you descent into the room below, crashing through another floor and finally coming to a halt on a padded surface. To your luck, the fall did not seem to hurt you too much and you are able to quickly shrug it off. As you glance up through the hole, you see the light is no longer there.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="dream" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="beginning2">
+        Continue...
+      </option>
+      <option id="">
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      The bright light reminds you of a summer vacation some many years ago with your family. You close your eyes and imagine yourself on the beach hugging your wife. Even though you feel yourself hugging the flower pot, you let your imagination fill the embrace with warmth. All notion of time eludes you.
+
+You instictively open your eyes and notice yourself in the same bed again, still clutching the flower pot. You get up and leave the pot behind, embarrased by the affection you now feel towards it.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="beginning2" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="nurse_encounter">
+        Take the corridor left towards the staircase.
+      </option>
+      <option id="oppositeroom">
+        Go into the room on the opposite side of the corridor.
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      Long 
+      description text 
+      3 ???
+      ]]>
+    </desc>
+  </scene>
+  <scene id="vampireroom" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="ask_directions">
+        Ask for directions.
+      </option>
+      <option id="turn_off_tv">
+        Turn off the tv and demand answers.
+      </option>
+      <option id="find_own_way">
+        Find your own way out and go look for more clues.
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      You brush the dust of yourself and look around.
+
+You see a woman sitting in an arm chair in candlelight. She wears a white dress and is drinking from a tea cup, holding a small plate in her other hand. She gives you a glance and a polite nod, then takes another sip from her cup. You follow her gaze to a tv set by the wall, showing a programme of an old couple potting a bouquet of small flowers. The woman seems to enjoy the show and doesn't mind you or the fact you fell through the ceiling.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="ask_directions" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="???">
+        Continue... ???
+      </option>
+      <option id="">
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      You try to draw the woman's attention and ask for directions to the archives. The woman guides you towards the next room with a wave of the hand, never shifting her look from the tv. You start to ask a follow-up question, but the lady merely points to the same direction again and you dare not bother her anymore. You turn and walk to where you think she was pointing.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="turn_off_tv" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="guard_room2">
+        Continue... ???
+      </option>
+      <option id="">
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      You walk over to the tv set and turn off the power. The woman takes another sip from her cup, but this time drinks all the rest. As she puts down the cup and plate onto a table next to the armchair, you see a line of red blood lining her upper lip. She turns towards you, glares into your eyes with the fury of a beast and lunges forward in a great leap. You see the danger, but you are too slow to act as the woman moves at a supernatural speed. She grabs your head and shoulder, exposing your neck, and sinks her long fangs into your blood-filled arteries.
+
+You awaken with a headache lying on the floor, surprised you are not dead. You feel your neck and find some dried blood there. All your muscles ache as you begin to move.
+
+An irresistible smell begins to draw your attention. You feel a craving stronger than any hunger you have felt before. You follow the scent of blood eagerly.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="find_own_way" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="2">
+      </option>
+      <option id="1">
+        Option2 text 3
+      </option>
+      <option id="3">
+        Option3 text 3
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      Long 
+      description text 
+      3 ???
+      ]]>
+    </desc>
+  </scene>
+  <scene id="guard_room2" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="2">
+        Option1 text 3 ???
+      </option>
+      <option id="">
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      Long 
+      description text 
+      3 ???
+      ]]>
+    </desc>
+  </scene>
+  <scene id="crazyman" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="tap">
+        Tap on his shoulder to draw his attention.
+      </option>
+      <option id="flip_light">
+        Find and flip the light switch to illuminate the situation.
+      </option>
+      <option id="sneak">
+        Sneak stealthily across the room to the next corridor and avoid the creepy, old man.
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      You enter a large unlit room. On one wall you see some cabinets with a tea set on them and a wood stove. On another wall some bookshelves and an armchair. What catches your gaze however, is a figure by a window.
+
+An old man is hunched over with a blanket over his bony shoulders - and a small flower pot with a round cactus in his hands - staring the moonlight shining from the window. You get a tingling feeling this man is knowledgeable. The moonlight paints an aura around the man.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="tap" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="gameover">
+        Game over.
+      </option>
+      <option id="">
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      The man jumps a bit in fright and quickly turns around to stare straight into your eyes. His stare freezes you in place as you are both mesmerized and panicked. The man's eyes swirl in your view and you feel pressure building up in your head. The pain becomes excruciating as the man's telepathic abilities bring your brain to a boil and your head explodes in a beautiful show of fireworks!
+      ]]>
+    </desc>
+  </scene>
+  <scene id="flip_light" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="guard_room">
+        Continue...
+      </option>
+      <option id="">
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      You fumble in the dark at the wall. As you catch a glimpse of the light switch, you reach eagerly and in your clumsiness you knock over a flower pot, which falls to the floor with a crash. The man is startled, but as he sees you fumbling about, he becomes calm and takes a few steps closer to you. He speaks in a raspy voice: ”I know what you seek, breaker of pots. However, what you seek you can only get once you first get something else: a key. In the room of the guardian, the key you seek swims in the blood of a slave of your kin. So I have foreseen!” The man let out a joyful cackle and dances a few circles before quieting down and beginning to pet his small cactus friend.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="sneak" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="2">
+        Option1 text 3 ???
+      </option>
+      <option id="">
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      You imagine your stealth skill going up a point as you masterfully avoid the old man's attention and move through the room and corridor, finding yourself in a... ???
+      ]]>
+    </desc>
+  </scene>
+  <scene id="guard_room" bgImage="testi2" audio="" loop="">
+    <options>
+      <option id="relaxed">
+        ”Hey there pal, no need to alarm yourself. I mean, do I look like a person to worry about?”
+      </option>
+      <option id="aggressive">
+        ”Step out of my way or I'll do terrible things!” *shake fist in air*
+      </option>
+      <option id="scared">
         ”Whoa, please don't hurt me, I am just a lost patient!”
       </option>
     </options>
     <desc>
       <![CDATA[
-        You find a door with a plaque next to it saying: ”Guard's room.” You open the door and step in to find the key. A gruesome scene opens before you: a stone altar with a mutilated sheep body on it lies in the middle of the room. With your step you hear a crunch and notice the floor of the room is filled with pieces of broken flower pots. A small window on the side wall lets in some moonlight.
+      You find a door with a plaque next to it saying: ”Guard's room”. You open the door and step in in search of the key. A gruesome scene opens before you: a stone altar with a mutilated sheep body resting on it lies in the middle of the room. With your step you hear a crunch and notice the floor of the room is filled with pieces of broken flower pots. A small window on the side wall lets in some moonlight.
 
-        On the altar edge sits a silver cup. Upon closer inspection you see it is filled with blood. As per the instructions of the crazy man, you dip your hand into the warm blood and feel the bottom of the cup until a small object finds it's way into your hand. You raise your hand from the blood and shake your hand wildly to rid yourself of the goo. Between your fingers is now a small key.
+On the altar edge sits a silver cup. Upon closer inspection you see it is filled with blood. As per the instructions of the crazy man, you dip your hand into the warm blood and feel the bottom of the cup until a small object finds its way into your hand. You raise your hand from the blood and shake your hand wildly to rid yourself of the goo. Between your fingers is now a small key.
 
-        Startled by a grunt you turn around to see a person in guard uniform wielding a butcher's knife and in the other hand hanging a sheep head by its' ear. You ready your words and prepare to talk your way through this.
+Startled by a grunt you turn around to see a person in guard uniform wielding a butcher's knife and in the other hand hanging a sheep head by its ear. You ready your words and prepare to talk your way through this.
       ]]>
     </desc>
   </scene>
-  <scene id="3" bgImage="testi3">
+  <scene id="relaxed" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="gameover">
+        Game over.
+      </option>
+      <option id="">
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      The guard's eyes glisten and a creepy smile envelops his face. Raising his knife he walks towards you, grabs you and holds you head above the altar. Chanting some ancient lore, he brings the knife to your neck and begins to cut through the skin, the muscles, the cartilages and finally the bones, severing your head and letting it fall onto the altar. You can feel the ungodly forces devouring your soul.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="aggressive" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="archive_room">
+        Continue
+      </option>
+      <option id="">
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      The guard's eyes glisten and a jovial laugh bellows from his mouth. He steps into the room and to the side, gesturing the way out with the hand still holding the sheep head, still unable to control his laughter. You quickly make your way past him and don't look back, yet you hear the giggling of the guard even as he closes the door behind you. You sigh in relief and are grateful to have your wife – or at least a photograph of her – accompanying you.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="scared" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="courtyard">
+        Continue...
+      </option>
+      <option id="">
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      The guard's eyes glisten and he throws the sheep head aside. With his free hand raised towards you he charges, grabs the key from your hand and throws it furiously out through the window. Screaming like a little girl, you flee the room and run through the corridors in panic, bursting through the main door leading outside. You fill your lungs with the cold air and calm yourself.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="courtyard" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="accuse_guard">
+        ”No, I saw the sheep. It was the guard inside that killed it!”
+      </option>
+      <option id="raise_fists">
+        *raise fists*
+      </option>
+      <option id="innocence">
+        ”I'm innocent!” you shriek in a horrible crazy person voice.
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      You walk out in the cold and dark outdoors air. The courtyard is surrounded by a tall iron fence and the asylum gate, which you saw before. In the middle of the courtyard the giant gargoyle statue menaces and grins in its mighty pose. The statue is solid rock, but still you cannot shake the fear that it might jump into movement any moment and you continue peeking at it from the corner of your eye, just to make sure it stays still.
+
+A road circles the gargoyle and from the circle leads both to the door behind you and to the iron gate. A crow sits on the fence next to the gate and looks at you.
+
+Behind the gate, the road leads to the shadows, likely to a nearby village or some such. As you walk closer to the fence you notice some flickering lights on the road some stonethrows away. The crow lets out an echoing craw and like a signal it makes the flickering lights start to approach much quicker. You recognize human forms carrying torches and pitchforks making their way towards you. Before you can move they yell for you to stop and one of them opens the gate, allowing the mob to flood to the courtyard and surround you. ”You're the one that ate our only sheep. You're the monster!” they yell at you.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="accuse_guard" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="archive_room">
+        Continue...
+      </option>
+      <option id="">
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      The villagers look to each other for guidance and without a word, like a collective machine, they make the decision to storm the asylum in search of the guard. Before long you are left alone on the courtyard. You glance to the now open gate and ponder if you should escape into the wide open world, but soon you realize that the answers still wait inside. As you look from the gate to the door and back again, a glimmer on the stampeded ground catches your eye. It's the key! The guard's throw must have landed it here. Determined for truth you head back inside towards the archive room.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="raise_fists" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="gameover">
+        Game over.
+      </option>
+      <option id="">
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      The villagers look to each other for guidance and without a word, like a collective machine, they all turn back towards you and raise their pitchforks. Panic strikes you and it is soon joined by pain, as the villagers impale you on their crude weapons. You are carried off, a bleeding bag of meat jumping with the villagers steps, with the hay tools piercing you.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="innocence" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="2">
+        Option1 text 3 ???
+      </option>
+      <option id="1">
+        Option2 text 3
+      </option>
+      <option id="3">
+        Option3 text 3
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      The villagers look to each other for guidance and without a word, like a collective machine… ???
+      ]]>
+    </desc>
+  </scene>
+  <scene id="archive_room" bgImage="testi1" audio="" loop="">
+    <options>
+      <option id="throw">
+        Throw a flower pot at the ghost.
+      </option>
+      <option id="disgust">
+        Express your disgust at the floating ectoplasm.
+      </option>
+      <option id="politeness">
+        Bow your head and greet the man with your most corteous gestures.
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+       You see a sturdy green door in front of you, it's paint peeling off and revealing a brown oak surface. Above the door a plaque reads: ”Archive room”. A large round handle and an iron lock are embedded into the strong door.
+
+You take the key in your hand and place it into the lock. It requires some force to get through the rust and dust. A loud creak echoes in the hallway and behind the door. The lock moans and grinds and finally rewards you with a satisfying click. You push the grand door open and cover your mouth from all the dust puffing around. After coughing a few times you raise your eyes to the archive room and see right in front of you a ghostly apparition of a high class man. The man appears as a glowy and partly transparent ghost. He even waves his hands around a bit and lets out a meager ”OoooOooOOOoooOooOOooo...” You are not impressed.
+
+Behind the ghost you see rows of archive cabinets, one of them no doubt holding within the details that you seek.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="throw" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="redemption">
+        “I beg for your forgiveness, oh good sir! It was very foolish of me to do such a thing.”
+      </option>
+      <option id="repulsion">
+        “Get away from me!”
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      You grab the first thing that happens to be nearby – a flower pot – and toss it towards the ghastly man with a fierce shriek. Your “weapon” hits the shelf behind the man, but your actual target takes no damage. You are hardly surprised at all since by now you have already seen well enough bizarreness for one day, but the ghost seems, at the very least, devastated. “How dare you treat me with such disrespect?” he rumbles so powerfully that the whole asylum shakes. You are startled by the ghost and start looking for a way to escape, and you make your way to the nearest door. Not knowing what may be behind it, you wrench the door open and rush into the room. You realize you have jumped out of the frying pan into the fire: the room is a dead end. You turn around to see the ghost approaching threateningly. “What do you do now, foolish mortal?”
+      ]]>
+    </desc>
+  </scene>
+  <scene id="disgust" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="gameover">
+        Game over.
+      </option>
+      <option id="">
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      You shout profanities and shoo the ghost away from the room, but he remains in place. The immaterial man looks at you with disappointment and turns around. His ghostly hand reaches into the archive cabinet shelves and he pulls out a file. The man turns to look at you once more. He says: ”I am so disappointed.” and proceeds to rip the file into tiny shreds. His form glides through the wall backwards and disappears. No doubt the shreds of the file on the floor are none other than the one you have sought after. You are sad.
+
+You will forever wander the dark lands in limbo, never really knowing who you are.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="politeness" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="take_folder">
+        Take the folder, labeled “Patient records, volume 7”.
+      </option>
+      <option id="">
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      You bend the knee and bow your head as down as you can. “Good day, good sir! I am pleased to meet such a fine gentleman.” Your politeness seems to please the ghost and he tells you to rise. “Good day to you as well. I am the ghost of this archive and the guardian of all the knowledge stored on these shelves. Very long ago I was a patient in this asylum. I also passed away here, in this very room to be accurate, but to my deep discontent I could not continue my journey to the other side. I was locked here, doomed to guard this archive for all eternity. Now that I have introduced myself and told you my story, may I inquire your reason for being here?” I explained my situation and the ghost frowned. “Most interesting! Very well, I will help you because you have very nice manners for a mortal. Usually you earthly beings are horrible, always throwing those cursed flower pots at me! Come, I will show you where the information you require is.” The ghost shows you to a brown, shabby folder.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="redemption" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="take_folder">
+        Take the folder, labeled ”Patient records, volume 7”.
+      </option>
+      <option id="">
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      The ghostly man scoffs arrogantly. “It seems that you have at least some kind of manners after all. Very well, I will forgive you. Whatever is it that you wish to achieve by entering this archive?” You explain your situation to the man, making him frown and rub his chin. “’Tis a tricky situation, indeed. Normally, I would not bother meddling in mortal affairs as they are of very little interest to me, but it seems that you are not in this of your own volition. The information that you require is right here.” The ghost leads you to a certain shelf and points at a brown, shabby folder.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="repulsion" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="gameover">
+        Game over.
+      </option>
+      <option id="">
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      “As you wish!” The ghost dashes out of the door, shutting it with a loud slam. You start banging the door with your fists, but no matter what you do, the door will not budge. Suddenly, you start feeling cold and somehow dizzy. You touch your cheeks – is it blood running from your eyes? In the dim light of the room you see the gleaming of your own blood, and the last thing you feel before losing consciousness is the cold breath of death.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="take_folder" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="gameover_victory">
+        Game over. Victory?
+      </option>
+      <option id="">
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      “This is finally it”, you think while holding your file in your hand. With your other hand you hold the necklace with the photograph of your wife. “This is what we do now, my love”, you whisper. Just as you are about to open the folder to see its contents, the ghost interrupts you. “Wait!” You gaze upon the man with surprise. The ghost continues: “I have had time to read through these folders, which means I have also read yours. The information in those papers may not better your situation, but only worsens it. It is information that you would possibly do better without. Are you certain that you want to open that folder?” You have never been so certain about anything else, and without hesitation you open your folder. First you find a paper with your name on it. You leaf through the rest of the pages, and on the last page a part of a certain sentence catches your eye:
+
+“… without any kind of motive murdered his wife and is therefore dispatched to Bluebell Asylum for the rest of his remaining life.”
+
+The folder drops from your hand. You fall on your knees in shock 
+      ]]>
+    </desc>
+  </scene>
+  <scene id="gameover" bgImage="testi3" audio="" loop="">
     <options>
       <option id="2">
         Option1 text 3
@@ -57,9 +619,43 @@
     </options>
     <desc>
       <![CDATA[
-      Long
-      description text
-      3
+      GAME OVER
+      ]]>
+    </desc>
+  </scene>
+  <scene id="gameover_victory" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="2">
+        Option1 text 3
+      </option>
+      <option id="1">
+        Option2 text 3
+      </option>
+      <option id="3">
+        Option3 text 3
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      GAME OVER. YOU WIN?
+      ]]>
+    </desc>
+  </scene>
+  <scene id="empty" bgImage="testi3" audio="" loop="">
+    <options>
+      <option id="2">
+        Option1 text 3
+      </option>
+      <option id="1">
+        Option2 text 3
+      </option>
+      <option id="3">
+        Option3 text 3
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      Empty
       ]]>
     </desc>
   </scene>
