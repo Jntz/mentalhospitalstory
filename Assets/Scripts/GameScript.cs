@@ -9,6 +9,7 @@ public class GameScript : MonoBehaviour {
 	UIScript uiScript;
 	private TextAsset gameData;
 	public Scene[] scenes; //list of scenes 
+	public AudioSource audioSource;
 
 	//static definitions
 	private int currentSceneIndex = 0;
@@ -29,16 +30,20 @@ public class GameScript : MonoBehaviour {
 
 		uiScript.updateUIData (scene.bgImage, scene.option1.text, scene.option2.text, scene.option3.text, scene.description);
 
-		//guiScript.updateGUIdata (scene.bgImage, scene.option1.text, scene.option2.text, scene.option3.text, scene.description);
+		audioSource.clip = scene.audio;
+		audioSource.loop = scene.loop;
+		audioSource.Play ();
 	}
 
 	void loadGameData() {
 		int i = 0;
-		string description, bgImageName, id, optionID;
+		string description, bgImageName, id, optionID, audio, loop;
 		Sprite bgImage;
 		SceneOption option1, option2, option3;
 		XmlNode childNode;
-		
+		bool loopBoolean = false;
+		AudioClip audioClip;
+
 		//Load game data in xml file
 		gameData = Resources.Load("gameData") as TextAsset;
 		XmlDocument xmldoc = new XmlDocument ();
@@ -53,6 +58,10 @@ public class GameScript : MonoBehaviour {
 			
 			bgImageName = (string) node.Attributes["bgImage"].Value;
 			bgImage = Resources.Load<Sprite>("Sprites/" + bgImageName);
+			loopBoolean = node.Attributes["loop"].Value == "yes" ? true : false;
+			audio = (string) node.Attributes["audio"].Value;
+
+			audioClip = Resources.Load<AudioClip>("Audio/" + audio);
 			
 			//If cannot parse int value in string => continue
 			childNode = node.ChildNodes[0];
@@ -67,8 +76,9 @@ public class GameScript : MonoBehaviour {
 			
 			childNode = node.ChildNodes[1];
 			description = childNode.InnerText. Trim();
-			
-			scenes[i++] = new Scene(id, description, bgImage, option1, option2, option3);
+
+
+			scenes[i++] = new Scene(id, description, bgImage, option1, option2, option3, audioClip, loopBoolean);
 		}
 		
 	}
@@ -114,14 +124,18 @@ public class GameScript : MonoBehaviour {
 		public string id, description;
 		public Sprite bgImage;
 		public SceneOption option1, option2, option3;
+		public AudioClip audio;
+		public bool loop;
 		
-		public Scene(string id, string description, Sprite bgImage, SceneOption option1, SceneOption option2, SceneOption option3) {
+		public Scene(string id, string description, Sprite bgImage, SceneOption option1, SceneOption option2, SceneOption option3, AudioClip audio, bool loop) {
 			this.id = id;
 			this.description = description;
 			this.bgImage = bgImage;
 			this.option1 = option1;
 			this.option2 = option2;
 			this.option3 = option3;
+			this.audio = audio;
+			this.loop = loop;
 		}
 	}
 }

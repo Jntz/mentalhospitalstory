@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <scenes>
-  <scene id="beginning" bgImage="testi3" audio="" loop="">
+  <scene id="beginning" bgImage="patsas" audio="tuulijamolina" loop="yes">
     <options>
       <option id="nurse_encounter">
         Take the corridor left towards the staircase.
@@ -20,7 +20,46 @@ You have a necklace around your neck, one of those that can be opened. You open 
       ]]>
     </desc>
   </scene>
-  <scene id="nurse_encounter" bgImage="testi3" audio="" loop="">
+  <scene id="oppositeroom" bgImage="" audio="keinutuolin-irvikuva" loop="yes">
+    <options>
+      <option id="approach">
+        Approach the child.
+      </option>
+      <option id="nurse_encounter">
+        Leave the room and take the corridor to the right towards the stairs down.
+      </option>
+      <option id="uforoom">
+        Leave the room and take the corridor to the left to the open room.
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      You carefully open the door and step into a dark room. A bit of moonlight sieves through the half-closed curtains. You hear a faint creak from the side of the room. A figure of a child is rocking on a rocking chair back and forth in the shadows.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="approach" bgImage="" audio="" loop="">
+    <options>
+      <option id="nurse_encounter">
+        Take the corridor to the right towards the stairs down.
+      </option>
+      <option id="uforoom">
+        Take the corridor to the left to the open room.
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      You slowly take a step towards the rocking chair. It keeps rocking back and forth. You cannot see much in the shadows. You take another step. The child appears to ignore you. You say softly: ”Hello?”, but get no answer.
+
+The anxiety forces you to quickly step forward and grab the arm of the rocking chair to stop it. It comes to a halt. The wind from a small open window blows the curtains and moonlight shines on the chair. A teddy bear with an eerie smile stares soullesly at you. It doesn't seem alive. The chair stays still even as you let go of it.
+
+You've had enough of this room and turn to the door.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="nurse_encounter" bgImage="zombie_final" audio="korkokengat" loop="yes">
     <options>
       <option id="hide">
         hide in a nearby room that happens to be a cleaning closet.
@@ -38,7 +77,7 @@ You have a necklace around your neck, one of those that can be opened. You open 
       ]]>
     </desc>
   </scene>
-  <scene id="hide" bgImage="testi3" audio="" loop="">
+  <scene id="hide" bgImage="" audio="" loop="">
     <options>
       <option id="crazyman">
   Continue...
@@ -52,17 +91,13 @@ You have a necklace around your neck, one of those that can be opened. You open 
       ]]>
     </desc>
   </scene>
-  <scene id="shout" bgImage="testi3" audio="" loop="">
+  <scene id="shout" bgImage="" audio="" loop="">
     <options>
       <option id="gameover">
         Game over...
       </option>
-      <option id="1">
-        Option2 text 3
-      </option>
-      <option id="3">
-        Option3 text 3
-      </option>
+      <option id=""></option>
+      <option id=""></option>
     </options>
     <desc>
       <![CDATA[
@@ -70,10 +105,10 @@ You have a necklace around your neck, one of those that can be opened. You open 
       ]]>
     </desc>
   </scene>
-  <scene id="ignore" bgImage="testi3" audio="" loop="">
+  <scene id="ignore" bgImage="" audio="" loop="">
     <options>
-      <option id="???">
-        ???
+      <option id="gameover">
+        Game over.
       </option>
       <option id="">
       </option>
@@ -82,11 +117,11 @@ You have a necklace around your neck, one of those that can be opened. You open 
     </options>
     <desc>
       <![CDATA[
-      You try to stay calm as you slowly walk along the corridor, working your way towards the next stairs. Next to you, there is a dark room with its door wide open. You manage to pass the door by and a sigh of relief escapes your lips, but it seems that you counted your chickens before they were hatched: someone – or something – enters the corridor from the dark room just behind you and you do not hesitate to start running as fast as you can. You take a quick look over your shoulder and see the lady – or something that once was a lady. Rotting skin, blood red eyes and torn, dirty clothes tell you that the “lady” was clearly something inhuman.
+      You try to stay calm as you slowly walk along the corridor, working your way towards the next stairs. Next to you, there is a dark room with its door wide open. You manage to pass the door by and a sigh of relief escapes your lips, but it seems that you counted your chickens before they were hatched: someone – or something – enters the corridor from the dark room just behind you and you do not hesitate to start running as fast as you can. You take a quick look over your shoulder and see the lady – or something that once was a lady. Rotting skin, blood red eyes and torn, dirty clothes tell you that the “lady” was clearly something inhuman. In your thoughts you misstep onto a large jagged nail protruding from the floor. Stuck there, you can only listen as the “lady” approaches you from behind growling. The last thing you feel is a hand jamming through your ribcage into your lungs.
       ]]>
     </desc>
   </scene>
-  <scene id="uforoom" bgImage="testi3" audio="" loop="">
+  <scene id="uforoom" bgImage="" audio="ufohumina" loop="yes">
     <options>
       <option id="abduction">
         Throw the flower pot at the light source.
@@ -106,7 +141,7 @@ Flower pot in hand and the blinding light limiting your view, you take a moment 
       ]]>
     </desc>
   </scene>
-  <scene id="abduction" bgImage="testi3" audio="" loop="">
+  <scene id="abduction" bgImage="" audio="ufohumina" loop="yes">
     <options>
       <option id="gameover">
         Game over.
@@ -124,15 +159,13 @@ The light goes off and you feel the familiar tug of gravity, followed by the pai
       ]]>
     </desc>
   </scene>
-  <scene id="fall" bgImage="testi3" audio="" loop="">
+  <scene id="fall" bgImage="" audio="" loop="">
     <options>
       <option id="vampireroom">
         Continue...
       </option>
-      <option id="">
-      </option>
-      <option id="">
-      </option>
+      <option id=""></option>
+      <option id=""></option>
     </options>
     <desc>
       <![CDATA[
@@ -140,7 +173,7 @@ The light goes off and you feel the familiar tug of gravity, followed by the pai
       ]]>
     </desc>
   </scene>
-  <scene id="dream" bgImage="testi3" audio="" loop="">
+  <scene id="dream" bgImage="" audio="" loop="">
     <options>
       <option id="beginning2">
         Continue...
@@ -158,7 +191,7 @@ You instictively open your eyes and notice yourself in the same bed again, still
       ]]>
     </desc>
   </scene>
-  <scene id="beginning2" bgImage="testi3" audio="" loop="">
+  <scene id="beginning2" bgImage="" audio="" loop="">
     <options>
       <option id="nurse_encounter">
         Take the corridor left towards the staircase.
@@ -171,13 +204,11 @@ You instictively open your eyes and notice yourself in the same bed again, still
     </options>
     <desc>
       <![CDATA[
-      Long 
-      description text 
-      3 ???
+      You are back in the room where you started.
       ]]>
     </desc>
   </scene>
-  <scene id="vampireroom" bgImage="testi3" audio="" loop="">
+  <scene id="vampireroom" bgImage="" audio="" loop="">
     <options>
       <option id="ask_directions">
         Ask for directions.
@@ -197,15 +228,13 @@ You see a woman sitting in an arm chair in candlelight. She wears a white dress 
       ]]>
     </desc>
   </scene>
-  <scene id="ask_directions" bgImage="testi3" audio="" loop="">
+  <scene id="ask_directions" bgImage="" audio="" loop="">
     <options>
-      <option id="???">
-        Continue... ???
+      <option id="greenhouse">
+        Continue...
       </option>
-      <option id="">
-      </option>
-      <option id="">
-      </option>
+      <option id=""></option>
+      <option id=""></option>
     </options>
     <desc>
       <![CDATA[
@@ -213,10 +242,10 @@ You see a woman sitting in an arm chair in candlelight. She wears a white dress 
       ]]>
     </desc>
   </scene>
-  <scene id="turn_off_tv" bgImage="testi3" audio="" loop="">
+  <scene id="turn_off_tv" bgImage="" audio="" loop="">
     <options>
       <option id="guard_room2">
-        Continue... ???
+        Continue...
       </option>
       <option id="">
       </option>
@@ -233,44 +262,43 @@ An irresistible smell begins to draw your attention. You feel a craving stronger
       ]]>
     </desc>
   </scene>
-  <scene id="find_own_way" bgImage="testi3" audio="" loop="">
+  <scene id="find_own_way" bgImage="" audio="" loop="">
     <options>
-      <option id="2">
+      <option id="courtyard2">
+  Continue...
       </option>
-      <option id="1">
-        Option2 text 3
+      <option id=""></option>
+      <option id=""></option>
+    </options>
+    <desc>
+      <![CDATA[
+      You leave the room and stumble in the hallways until you end up at a big door. You go through and find yourself in the breeze of outside air.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="guard_room2" bgImage="avain" audio="nestetippuutipoittain" loop="">
+    <options>
+      <option id="relaxed">
+        ”Hey there pal, no need to alarm yourself. I mean, do I look like a person to worry about?”
       </option>
-      <option id="3">
-        Option3 text 3
+      <option id="aggressive">
+  ”Step out of my way or I'll do terrible things!” *shake fist in air*
+      </option>
+      <option id="scared">
+  ”Whoa, please don't hurt me, I am just a lost patient!”
       </option>
     </options>
     <desc>
       <![CDATA[
-      Long 
-      description text 
-      3 ???
+      You find a door with a plaque next to it saying: ”Guard's room”. You open the door and rush in in search of the blood. A gruesome scene opens before you: a stone altar with a mutilated sheep body resting on it lies in the middle of the room. With your step you hear a crunch and notice the floor of the room is filled with pieces of broken flower pots. A small window on the side wall lets in some moonlight.
+
+On the altar edge sits a silver cup. Upon closer inspection you see it is filled with blood. Hungrily you grab the cup and start slurping down the blood. As you finish you notice a small object on your lips: a key! You take it in your hand. You feel your urge for blood subsiding. Perhaps it was just a passing illness.
+
+Startled by a grunt you turn around to see a person in guard uniform wielding a butcher's knife and in the other hand hanging a sheep head by its ear. You ready your words and prepare to talk your way through this.
       ]]>
     </desc>
   </scene>
-  <scene id="guard_room2" bgImage="testi3" audio="" loop="">
-    <options>
-      <option id="2">
-        Option1 text 3 ???
-      </option>
-      <option id="">
-      </option>
-      <option id="">
-      </option>
-    </options>
-    <desc>
-      <![CDATA[
-      Long 
-      description text 
-      3 ???
-      ]]>
-    </desc>
-  </scene>
-  <scene id="crazyman" bgImage="testi3" audio="" loop="">
+  <scene id="crazyman" bgImage="" audio="hullunhopina" loop="yes">
     <options>
       <option id="tap">
         Tap on his shoulder to draw his attention.
@@ -290,7 +318,7 @@ An old man is hunched over with a blanket over his bony shoulders - and a small 
       ]]>
     </desc>
   </scene>
-  <scene id="tap" bgImage="testi3" audio="" loop="">
+  <scene id="tap" bgImage="" audio="" loop="">
     <options>
       <option id="gameover">
         Game over.
@@ -306,7 +334,7 @@ An old man is hunched over with a blanket over his bony shoulders - and a small 
       ]]>
     </desc>
   </scene>
-  <scene id="flip_light" bgImage="testi3" audio="" loop="">
+  <scene id="flip_light" bgImage="" audio="" loop="">
     <options>
       <option id="guard_room">
         Continue...
@@ -322,10 +350,10 @@ An old man is hunched over with a blanket over his bony shoulders - and a small 
       ]]>
     </desc>
   </scene>
-  <scene id="sneak" bgImage="testi3" audio="" loop="">
+  <scene id="sneak" bgImage="" audio="" loop="">
     <options>
-      <option id="2">
-        Option1 text 3 ???
+      <option id="greenhouse">
+        Continue...
       </option>
       <option id="">
       </option>
@@ -334,11 +362,27 @@ An old man is hunched over with a blanket over his bony shoulders - and a small 
     </options>
     <desc>
       <![CDATA[
-      You imagine your stealth skill going up a point as you masterfully avoid the old man's attention and move through the room and corridor, finding yourself in a... ???
+      You imagine your stealth skill going up a point as you masterfully avoid the old man's attention and move through the room and corridor, finding yourself in a new room.
       ]]>
     </desc>
   </scene>
-  <scene id="guard_room" bgImage="testi2" audio="" loop="">
+  <scene id="greenhouse" bgImage="" audio="" loop="">
+    <options>
+      <option id="crazyman">
+        Continue...
+      </option>
+      <option id="">
+      </option>
+      <option id="">
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      You enter a large, well-lit room that is apparently a greenhouse. The floor is filled with dozens and dozens of flower pots that are growing bluebells. You then realize why the asylum was named Bluebell Asylum and scoff at the overwhelming interest that someone obviously has in those fragile, blue flowers. You decide you have seen all there is to see in this room as a giant toad hops from under the tables on the other side of the room. You take the only way out left to you.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="guard_room" bgImage="avain" audio="nestetippuutipoittain" loop="">
     <options>
       <option id="relaxed">
         ”Hey there pal, no need to alarm yourself. I mean, do I look like a person to worry about?”
@@ -360,7 +404,7 @@ Startled by a grunt you turn around to see a person in guard uniform wielding a 
       ]]>
     </desc>
   </scene>
-  <scene id="relaxed" bgImage="testi3" audio="" loop="">
+  <scene id="relaxed" bgImage="" audio="" loop="">
     <options>
       <option id="gameover">
         Game over.
@@ -376,7 +420,7 @@ Startled by a grunt you turn around to see a person in guard uniform wielding a 
       ]]>
     </desc>
   </scene>
-  <scene id="aggressive" bgImage="testi3" audio="" loop="">
+  <scene id="aggressive" bgImage="" audio="" loop="">
     <options>
       <option id="archive_room">
         Continue
@@ -392,7 +436,7 @@ Startled by a grunt you turn around to see a person in guard uniform wielding a 
       ]]>
     </desc>
   </scene>
-  <scene id="scared" bgImage="testi3" audio="" loop="">
+  <scene id="scared" bgImage="" audio="" loop="">
     <options>
       <option id="courtyard">
         Continue...
@@ -408,7 +452,7 @@ Startled by a grunt you turn around to see a person in guard uniform wielding a 
       ]]>
     </desc>
   </scene>
-  <scene id="courtyard" bgImage="testi3" audio="" loop="">
+  <scene id="courtyard" bgImage="patsas" audio="korppi2" loop="">
     <options>
       <option id="accuse_guard">
         ”No, I saw the sheep. It was the guard inside that killed it!”
@@ -430,15 +474,33 @@ Behind the gate, the road leads to the shadows, likely to a nearby village or so
       ]]>
     </desc>
   </scene>
-  <scene id="accuse_guard" bgImage="testi3" audio="" loop="">
+  <scene id="courtyard2" bgImage="patsas" audio="korppi2" loop="">
+    <options>
+      <option id=""></option>
+      <option id="raise_fists">
+        *raise fists*
+      </option>
+      <option id="innocence">
+        ”I'm innocent!” you shriek in a horrible crazy person voice.
+      </option>
+    </options>
+    <desc>
+      <![CDATA[
+      You walk out in the cold and dark outdoors air. The courtyard is surrounded by a tall iron fence and the asylum gate, which you saw before. In the middle of the courtyard the giant gargoyle statue menaces and grins in its mighty pose. The statue is solid rock, but still you cannot shake the fear that it might jump into movement any moment and you continue peeking at it from the corner of your eye, just to make sure it stays still.
+
+A road circles the gargoyle and from the circle leads both to the door behind you and to the iron gate. A crow sits on the fence next to the gate and looks at you.
+
+Behind the gate, the road leads to the shadows, likely to a nearby village or some such. As you walk closer to the fence you notice some flickering lights on the road some stonethrows away. The crow lets out an echoing craw and like a signal it makes the flickering lights start to approach much quicker. You recognize human forms carrying torches and pitchforks making their way towards you. Before you can move they yell for you to stop and one of them opens the gate, allowing the mob to flood to the courtyard and surround you. ”You're the one that ate our only sheep. You're the monster!” they yell at you.
+      ]]>
+    </desc>
+  </scene>
+  <scene id="accuse_guard" bgImage="" audio="" loop="">
     <options>
       <option id="archive_room">
         Continue...
       </option>
-      <option id="">
-      </option>
-      <option id="">
-      </option>
+      <option id=""></option>
+      <option id=""></option>
     </options>
     <desc>
       <![CDATA[
@@ -446,7 +508,7 @@ Behind the gate, the road leads to the shadows, likely to a nearby village or so
       ]]>
     </desc>
   </scene>
-  <scene id="raise_fists" bgImage="testi3" audio="" loop="">
+  <scene id="raise_fists" bgImage="" audio="" loop="">
     <options>
       <option id="gameover">
         Game over.
@@ -462,25 +524,21 @@ Behind the gate, the road leads to the shadows, likely to a nearby village or so
       ]]>
     </desc>
   </scene>
-  <scene id="innocence" bgImage="testi3" audio="" loop="">
+  <scene id="innocence" bgImage="" audio="" loop="">
     <options>
-      <option id="2">
-        Option1 text 3 ???
+      <option id="gameover">
+        Game over.
       </option>
-      <option id="1">
-        Option2 text 3
-      </option>
-      <option id="3">
-        Option3 text 3
-      </option>
+      <option id=""></option>
+      <option id=""></option>
     </options>
     <desc>
       <![CDATA[
-      The villagers look to each other for guidance and without a word, like a collective machine… ???
+      The villagers look to each other for guidance and without a word, like a collective machine, they all turn back towards you and raise their pitchforks. Panic strikes you and it is soon joined by pain, as the villagers impale you on their crude weapons. You are carried off, a bleeding bag of meat jumping with the villagers steps, with the hay tools piercing you.
       ]]>
     </desc>
   </scene>
-  <scene id="archive_room" bgImage="testi1" audio="" loop="">
+  <scene id="archive_room" bgImage="haamu.png" audio="" loop="">
     <options>
       <option id="throw">
         Throw a flower pot at the ghost.
@@ -502,7 +560,7 @@ Behind the ghost you see rows of archive cabinets, one of them no doubt holding 
       ]]>
     </desc>
   </scene>
-  <scene id="throw" bgImage="testi3" audio="" loop="">
+  <scene id="throw" bgImage="" audio="" loop="">
     <options>
       <option id="redemption">
         “I beg for your forgiveness, oh good sir! It was very foolish of me to do such a thing.”
@@ -510,8 +568,7 @@ Behind the ghost you see rows of archive cabinets, one of them no doubt holding 
       <option id="repulsion">
         “Get away from me!”
       </option>
-      <option id="">
-      </option>
+      <option id=""></option>
     </options>
     <desc>
       <![CDATA[
@@ -519,15 +576,13 @@ Behind the ghost you see rows of archive cabinets, one of them no doubt holding 
       ]]>
     </desc>
   </scene>
-  <scene id="disgust" bgImage="testi3" audio="" loop="">
+  <scene id="disgust" bgImage="" audio="" loop="">
     <options>
       <option id="gameover">
         Game over.
       </option>
-      <option id="">
-      </option>
-      <option id="">
-      </option>
+      <option id=""></option>
+      <option id=""></option>
     </options>
     <desc>
       <![CDATA[
@@ -537,15 +592,13 @@ You will forever wander the dark lands in limbo, never really knowing who you ar
       ]]>
     </desc>
   </scene>
-  <scene id="politeness" bgImage="testi3" audio="" loop="">
+  <scene id="politeness" bgImage="" audio="" loop="">
     <options>
       <option id="take_folder">
         Take the folder, labeled “Patient records, volume 7”.
       </option>
-      <option id="">
-      </option>
-      <option id="">
-      </option>
+      <option id=""></option>
+      <option id=""></option>
     </options>
     <desc>
       <![CDATA[
@@ -553,15 +606,13 @@ You will forever wander the dark lands in limbo, never really knowing who you ar
       ]]>
     </desc>
   </scene>
-  <scene id="redemption" bgImage="testi3" audio="" loop="">
+  <scene id="redemption" bgImage="" audio="" loop="">
     <options>
       <option id="take_folder">
         Take the folder, labeled ”Patient records, volume 7”.
       </option>
-      <option id="">
-      </option>
-      <option id="">
-      </option>
+      <option id=""></option>
+      <option id=""></option>
     </options>
     <desc>
       <![CDATA[
@@ -569,7 +620,7 @@ You will forever wander the dark lands in limbo, never really knowing who you ar
       ]]>
     </desc>
   </scene>
-  <scene id="repulsion" bgImage="testi3" audio="" loop="">
+  <scene id="repulsion" bgImage="" audio="" loop="">
     <options>
       <option id="gameover">
         Game over.
@@ -585,7 +636,7 @@ You will forever wander the dark lands in limbo, never really knowing who you ar
       ]]>
     </desc>
   </scene>
-  <scene id="take_folder" bgImage="testi3" audio="" loop="">
+  <scene id="take_folder" bgImage="" audio="" loop="">
     <options>
       <option id="gameover_victory">
         Game over. Victory?
@@ -605,16 +656,13 @@ The folder drops from your hand. You fall on your knees in shock
       ]]>
     </desc>
   </scene>
-  <scene id="gameover" bgImage="testi3" audio="" loop="">
+  <scene id="gameover" bgImage="" audio="" loop="">
     <options>
-      <option id="2">
-        Option1 text 3
+      <option id="">
       </option>
-      <option id="1">
-        Option2 text 3
+      <option id="">
       </option>
-      <option id="3">
-        Option3 text 3
+      <option id="">
       </option>
     </options>
     <desc>
@@ -623,16 +671,13 @@ The folder drops from your hand. You fall on your knees in shock
       ]]>
     </desc>
   </scene>
-  <scene id="gameover_victory" bgImage="testi3" audio="" loop="">
+  <scene id="gameover_victory" bgImage="" audio="" loop="">
     <options>
-      <option id="2">
-        Option1 text 3
+      <option id="">
       </option>
-      <option id="1">
-        Option2 text 3
+      <option id="">
       </option>
-      <option id="3">
-        Option3 text 3
+      <option id="">
       </option>
     </options>
     <desc>
@@ -641,7 +686,7 @@ The folder drops from your hand. You fall on your knees in shock
       ]]>
     </desc>
   </scene>
-  <scene id="empty" bgImage="testi3" audio="" loop="">
+  <scene id="empty" bgImage="" audio="" loop="">
     <options>
       <option id="2">
         Option1 text 3

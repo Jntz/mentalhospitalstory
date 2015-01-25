@@ -41,6 +41,12 @@ public class UIScript : MonoBehaviour {
 		}
 
 		this.image.sprite = image;
+		if (this.image.sprite == null) {
+			this.image.gameObject.SetActive(false);
+		}
+		else {
+			this.image.gameObject.SetActive(true);
+		}
 	}
 	public void ToggleMenu() {
 		restartMenu.gameObject.SetActive (!restartMenu.IsActive ());
